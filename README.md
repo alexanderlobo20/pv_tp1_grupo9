@@ -23,7 +23,7 @@ El objetivo es representar de forma visual y estructurada la información de un 
 ### Construcción de las páginas HTML  
 Las páginas fueron desarrolladas utilizando únicamente HTML, organizando el contenido de manera estructurada.  
 
-Se implementó una estructura común en todas las páginas, compuesta por navegación lateral mediante un `<aside>` y secciones de contenido relacionadas con la página seleccionada.  
+Se implementó un menú de navegación mediante un `<nav>`, que permite acceder a las distintas páginas del sitio y visualizar las secciones de contenido correspondientes a cada página seleccionada.
 
 La navegación entre páginas se realiza mediante enlaces (`<a href="">`), permitiendo la interconexión entre el dashboard, el explorador de proyectos, el detalle de proyecto y el perfil de usuario.  
 
