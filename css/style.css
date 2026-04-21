@@ -7,7 +7,8 @@
 :root {
     --bg-main: #001355;
     --color-hover: rgb(212, 238, 250);
-    --color-focus: rgb(0, 179, 255);
+    --color-active: rgb(0, 179, 255);
+    --color-focus: rgb(212, 238, 250);
 }
 
 img {
@@ -50,15 +51,15 @@ header nav a:hover:not(.active) {
     color: var(--color-hover);
 }
 
-header nav a:focus:not(.active) {
-    color: var(--color-focus);
+header nav a:active:not(.active) {
+    color: var(--color-active);
 }
 
 header nav a.active {
     color: var(--color-focus);
     transform: scale(1.1);
     text-shadow: -1px 2px 2px black;
-    outline: 2px solid var(--color-focus);
+    outline: 2px solid var(--color-active);
     outline-offset: 2px;
 }
 
@@ -205,7 +206,7 @@ body {
 }
 
 strong {
-  color: var(--color-focus);
+  color: var(--color-active);
 }
 
 footer { 
