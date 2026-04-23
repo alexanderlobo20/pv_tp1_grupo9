@@ -15,13 +15,13 @@
                 <a href="perfil.html">Perfil de Usuario</a>
             </nav>
         </header>
-        <main>
-            <h1>Listado de Proyectos</h1>
+        <main >
+            <h1 class="titulo-principal">Listado de Proyectos</h1>
 
-            <aside> 
+            <aside class="filtros"> 
                 <h2>Filtros</h2> 
-                <label>Categoría:</label> 
-                <select> 
+                <label class="label">Categoría:</label> 
+                <select class="op"> 
                     <option>Todas</option> 
                     <option>Programación</option>  
                     <option>Idiomas</option> 
@@ -30,8 +30,8 @@
                 </select> 
                 <br><br> 
 
-                <label>Año:</label> 
-                <select> 
+                <label class="label">Año:</label> 
+                <select class="op"> 
                     <option>2026</option> 
                     <option>2025</option>
                     <option>2024</option>
@@ -39,57 +39,57 @@
                 </select> 
                 <br><br> 
 
-                <label>Estado:</label> 
-                <select> 
+                <label class="label">Estado:</label> 
+                <select class="op"> 
                     <option>Todos</option> 
                     <option>En curso</option> 
                     <option>Finalizado</option> 
                 </select> 
             </aside>
 
-            <section>
+            <section class="proyectos">
                 <h2>Proyectos</h2>
-
-                <article>
-                    <h3>Programación Visual</h3>
-                    <img src="assets/img/pv.jpg" alt="Programación Visual">
+                <div class="proyectos-lista">
+                <article >
+                    <img src="assets/img/pv.jpg" alt="Programación Visual" class="img">
+                    <h3 class="T">Programación Visual</h3>
                     <p>Desarrollo de aplicaciones web interactivas.</p>
                     <p>Categoría: Programación</p>
                     <a href="detalle.html">Ver detalle</a>
                 </article>
 
-                <article>
-                    <h3>Inglés</h3>
-                    <img src="assets/img/ingles.jpg" alt="Inglés">
+                <article >
+                    <img src="assets/img/ingles.jpg" alt="Inglés" class="img">
+                    <h3 class="T">Inglés</h3>
                     <p>Prácticas de vocabulario y comprensión lectora.</p>
                     <p>Categoría: Idiomas</p>
                     <a href="detalle.html">Ver detalle</a>
                 </article>
 
-                <article>
-                    <h3>Programación Estructurada</h3>
-                    <img src="assets/img/pe.jpg" alt="Programación Estructurada">
+                <article >
+                    <img src="assets/img/pe.jpg" alt="Programación Estructurada" class="img">
+                    <h3 class="T">Programación Estructurada</h3>
                     <p>Uso de estructuras de control y lógica básica.</p>
                     <p>Categoría: Programación</p>
                     <a href="detalle.html">Ver detalle</a>
                 </article>
 
-                <article>
-                    <h3>Álgebra</h3>
-                    <img src="assets/img/algebra.jpg" alt="Álgebra">
+                <article >
+                    <img src="assets/img/algebra.jpg" alt="Álgebra" class="img">
+                    <h3 class="T">Álgebra</h3>
                     <p>Resolución de ecuaciones y problemas matemáticos.</p>
                     <p>Categoría: Matemáticas</p>
                     <a href="detalle.html">Ver detalle</a>
                 </article>
 
-                <article>
-                    <h3>Base de Datos</h3>
-                    <img src="assets/img/bd.jpg" alt="Base de Datos">
+                <article class="proyecto">
+                    <img src="assets/img/bd.jpg" alt="Base de Datos" class="img">
+                    <h3 class="T">Base de Datos</h3>
                     <p>Diseño y gestión de información estructurada.</p>
                     <p>Categoría: Base de Datos</p>
                     <a href="detalle.html">Ver detalle</a>
                 </article>
-
+                </div>
             </section>
         </main>
         <footer>
