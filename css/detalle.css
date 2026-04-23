@@ -1,0 +1,180 @@
+main > article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* --- Titulo del proyecto --- */
+main > article > section:first-of-type {
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main > article > section:first-of-type h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: #fff;
+    text-shadow: -2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: -1px;
+}
+
+main > article > section:first-of-type p {
+    font-size: 1rem;
+    color: rgb(100, 206, 255);
+    line-height: 1.5;
+}
+
+/* --- Secciones generales --- */
+main > article > section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #f0f0f0;
+}
+
+main > article > section h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: #fff;
+    text-shadow: -1px 2px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid var(--color-active);
+    padding-bottom: 10px;
+}
+
+/* --- Imagen de descripción --- */
+main > article > section img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > article > section img:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 22px rgba(0, 0, 0, 0.45);
+}
+
+/* --- Párrafos de descripción --- */
+main > article > section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgb(212, 238, 250);
+}
+
+/* --- Recursos --- */
+main > article > section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+}
+
+main > article > section ul li a {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #f0f0f0;
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+main > article > section ul li a:hover {
+    transform: translateY(-4px);
+    background-color: rgb(212, 238, 250);
+    box-shadow: 0px 14px 12px rgba(0, 0, 0, 0.18);
+}
+
+main > article > section ul li a:active {
+    color: var(--color-active);
+}
+
+/* --- Equipo --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f0f0f0;
+    color: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: var(--color-active);
+    color: #fff;
+}
+
+thead th {
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: rgb(212, 238, 250);
+}
+
+tbody td {
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+tbody td a {
+    color: var(--bg-main);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+tbody td a:hover {
+    color: var(--color-active);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    main > article {
+        padding: 40px 20px 60px;
+        gap: 40px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main > article > section ul {
+        flex-direction: column;
+    }
+
+    main > article > section ul li a {
+        text-align: center;
+    }
+}
